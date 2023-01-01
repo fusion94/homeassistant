@@ -17,4 +17,4 @@ communication. Home Assistant originally was run on a Raspberry Pi but I have
 since moved it to run as a docker container running on a [Synology NAS
 DiskStation DS1621+](https://www.synology.com/en-us/products/DS1621+)
 
-## test
+**Note: Private information is stored in secrets.yaml (not uploaded)**
