@@ -51,7 +51,9 @@ configure it for use.
 
 ## Gear/Equipment
 
-- Cloud Key Gen2 Plus running UniFi OS Version 3.0.13
+- [Cloud Key Gen2 Plus](https://store.ui.com/collections/unifi-protect-nvr/products/unifi-cloudkey-plus)
+- [Security Gateway Pro
+  (USG-PRO-4)](https://store.ui.com/collections/routing-switching/products/unifi-security-gateway-pro)
 
 ## Screenshots
 
