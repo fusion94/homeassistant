@@ -34,4 +34,34 @@ _Synology Dashboards_
 - Low battery on devices
 - High humidity notification
 
-**Note: Private information is stored in secrets.yaml (not uploaded)**
+## Architecture
+
+I'm running two internet connections here at the house. The first is
+Xfinity/Comcast Business Internet Gigabit Extra (1.25 Gbps / 35 Mbps) and the
+other is AT&T's Internet 100 (100 Mbps / 25 Mbps). Both of these routers are
+plugged into a Ubiquiti Security Gateway Pro (USG-PRO-4) which is rack mounted
+in my Garage/Home Office/Man Cave. You can configure the USG-Pro to either do
+WAN Failover or WAN Load Balancing. I've configured the USG-Pro-4 tp utilize WAN
+Failover.
+
+![USG-PRO-4](usg-pro-wan.png)
+_USG-Pro-4 WAN Failover_
+
+**What is WAN Failover?**
+Failover enables you to connect a second Internet connection to your UniFi
+Gateway which will serve as a “backup”. If your primary Internet service goes
+down, you will begin utilizing your secondary Internet connection.
+
+**How does UniFi determine if my Internet goes down?**
+The UniFi Network Application checks for connectivity and latency to an “echo
+server”. By default, this is set to ping.ui.com which leverages responses from
+various locations to ensure maximum accuracy.
+
+In addition to the two WAN connections, UniFi Gateways also support the use of
+our UniFi LTE Backup which is connected to a LAN port. This is only capable of
+being used as a failover option.
+
+## Gear/Equipment
+
+- Cloud Key Gen2 Plus running UniFi OS Version 3.0.13
+- **Note: Private information is stored in secrets.yaml (not uploaded)**
