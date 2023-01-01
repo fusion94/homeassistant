@@ -17,6 +17,14 @@ communication. Home Assistant originally was run on a Raspberry Pi but I have
 since moved it to run as a docker container running on a [Synology NAS
 DiskStation DS1621+](https://www.synology.com/en-us/products/DS1621+)
 
+## Screenshots
+
+![HA Dashboard Overview](overview.png)
+_Entry Point into the Dashboards_
+
+![HA Dashboard - Synology](synology.png)
+_Synology Dashboards_
+
 ## Features
 
 - Turning on lights depending on the time of day (sunrise/sunset)
