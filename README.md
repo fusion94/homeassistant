@@ -1,9 +1,9 @@
-- [![GitHub stars](https://img.shields.io/github/stars/fusion94/homeassistant.svg?style=plasticr)](https://github.com/geekofweek/homeassistant/stargazers)
-  [![GitHub last commit](https://img.shields.io/github/last-commit/fusion94/homeassistant.svg?style=plasticr)](https://github.com/fusion94/homeassistant/commits/master)
-  ![GitHub commit activity](https://img.shields.io/github/commit-activity/w/fusion94/homeassistant)
-  [![HA Version](https://img.shields.io/badge/Running%20Home%20Assistant-2022.12.7%20-darkblue)](https://github.com/home-assistant/home-assistant/releases/latest)
-  [![HA Community](https://img.shields.io/badge/HA%20community-forum-orange)](https://community.home-assistant.io/u/fusion94/summary)
-  ![GitHub](https://img.shields.io/github/license/fusion94/homeassistant)
+[![GitHub stars](https://img.shields.io/github/stars/fusion94/homeassistant.svg?style=plasticr)](https://github.com/geekofweek/homeassistant/stargazers)
+[![GitHub last commit](https://img.shields.io/github/last-commit/fusion94/homeassistant.svg?style=plasticr)](https://github.com/fusion94/homeassistant/commits/master)
+![GitHub commit activity](https://img.shields.io/github/commit-activity/w/fusion94/homeassistant)
+[![HA Version](https://img.shields.io/badge/Running%20Home%20Assistant-2022.12.7%20-darkblue)](https://github.com/home-assistant/home-assistant/releases/latest)
+[![HA Community](https://img.shields.io/badge/HA%20community-forum-orange)](https://community.home-assistant.io/u/fusion94/summary)
+![GitHub](https://img.shields.io/github/license/fusion94/homeassistant)
 
 # Overview
 
