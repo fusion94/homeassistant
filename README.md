@@ -22,10 +22,11 @@ DiskStation DS1621+](https://www.synology.com/en-us/products/DS1621+)
 I'm running two internet connections here at the house. The first is
 Xfinity/Comcast Business Internet Gigabit Extra (1.25 Gbps / 35 Mbps) and the
 other is AT&T's Internet 100 (100 Mbps / 25 Mbps). Both of these routers are
-plugged into a Ubiquiti Security Gateway Pro (USG-PRO-4) which is rack mounted
-in my Garage/Home Office/Man Cave. You can configure the USG-Pro to either do
-WAN Failover or WAN Load Balancing. I've configured the USG-Pro-4 tp utilize WAN
-Failover.
+plugged into a [Ubiquiti Security Gateway Pro
+(USG-PRO-4)](https://store.ui.com/collections/routing-switching/products/unifi-security-gateway-pro)
+which is rack mounted in my Garage/Home Office/Man Cave. You can configure the
+USG-Pro to either do WAN Failover or WAN Load Balancing. I've configured the
+USG-Pro-4 to utilize WAN Failover.
 
 ![USG-PRO-4](usg-pro-wan-full.png)
 _USG-Pro-4 WAN Failover_
@@ -43,6 +44,10 @@ various locations to ensure maximum accuracy.
 In addition to the two WAN connections, UniFi Gateways also support the use of
 our UniFi LTE Backup which is connected to a LAN port. This is only capable of
 being used as a failover option.
+
+While I have the [UniFi
+LTE](https://store.ui.com/collections/wireless/products/unifi-lte) I've yet to
+configure it for use.
 
 ## Gear/Equipment
 
