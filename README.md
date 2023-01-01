@@ -17,23 +17,6 @@ communication. Home Assistant originally was run on a Raspberry Pi but I have
 since moved it to run as a docker container running on a [Synology NAS
 DiskStation DS1621+](https://www.synology.com/en-us/products/DS1621+)
 
-## Screenshots
-
-![HA Dashboard Overview](overview.png)
-_Entry Point into the Dashboards_
-
-![HA Dashboard - Synology](synology.png)
-_Synology Dashboards_
-
-## Features
-
-- Turning on lights depending on the time of day (sunrise/sunset)
-- Smoke Alarms/CO<sub>2</sub> Detection
-- Printer low ink notification
-- Doorbell notification
-- Low battery on devices
-- High humidity notification
-
 ## Architecture
 
 I'm running two internet connections here at the house. The first is
@@ -44,7 +27,7 @@ in my Garage/Home Office/Man Cave. You can configure the USG-Pro to either do
 WAN Failover or WAN Load Balancing. I've configured the USG-Pro-4 tp utilize WAN
 Failover.
 
-![USG-PRO-4](usg-pro-wan.png)
+![USG-PRO-4](usg-pro-wan-full.png)
 _USG-Pro-4 WAN Failover_
 
 **What is WAN Failover?**
@@ -64,4 +47,22 @@ being used as a failover option.
 ## Gear/Equipment
 
 - Cloud Key Gen2 Plus running UniFi OS Version 3.0.13
-- **Note: Private information is stored in secrets.yaml (not uploaded)**
+
+## Screenshots
+
+![HA Dashboard Overview](overview.png)
+_Entry Point into the Dashboards_
+
+![HA Dashboard - Synology](synology.png)
+_Synology Dashboards_
+
+## Features
+
+- Turning on lights depending on the time of day (sunrise/sunset)
+- Smoke Alarms/CO<sub>2</sub> Detection
+- Printer low ink notification
+- Doorbell notification
+- Low battery on devices
+- High humidity notification
+
+**Note: Private information is stored in secrets.yaml (not uploaded)**
