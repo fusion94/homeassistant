@@ -51,10 +51,18 @@ configure it for use.
 
 ## Gear/Equipment
 
+This list of gear/equipment is not complete.
+
+### Networking
+
 - [Cloud Key Gen2 Plus](https://store.ui.com/collections/unifi-protect-nvr/products/unifi-cloudkey-plus)
-- [Security Gateway Pro
-  (USG-PRO-4)](https://store.ui.com/collections/routing-switching/products/unifi-security-gateway-pro)
+- [Security Gateway Pro (USG-PRO-4)](https://store.ui.com/collections/routing-switching/products/unifi-security-gateway-pro)
 - [UniFi LTE](https://store.ui.com/collections/wireless/products/unifi-lte)
+- [Switch 24 PoE](https://store.ui.com/collections/unifi-network-switching/products/usw-24-poe)
+- [Switch Pro 48 PoE](https://store.ui.com/collections/unifi-network-switching/products/usw-pro-48-poe)
+- [Switch Pro 48](https://store.ui.com/collections/unifi-network-switching/products/usw-pro-48)
+- [Switch Aggregation](https://store.ui.com/collections/unifi-network-switching/products/unifi-switch-aggregation)
+- [Access Point FlexHD](https://store.ui.com/collections/wireless/products/unifi-flexhd) x5
 
 ## Screenshots
 
