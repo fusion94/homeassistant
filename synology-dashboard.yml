@@ -1,0 +1,157 @@
+views:
+  - theme: Backend-selected
+    title: Home
+    type: custom:horizontal-layout
+    layout:
+      width: 350
+      max_cols: 3
+    subview: false
+    badges: []
+    cards:
+      - type: entities
+        entities:
+          - entity: sensor.lil_nas_a_cpu_load_average_15_min
+            name: CPU Load Average (15 min)
+          - entity: sensor.lil_nas_a_cpu_load_average_5_min
+            name: CPU Load Average (5 min)
+          - entity: sensor.lil_nas_a_cpu_utilization_total
+            name: CPU Utilization (Total)
+          - entity: sensor.lil_nas_a_cpu_utilization_user
+            name: CPU Utilization (User)
+          - entity: sensor.lil_nas_a_download_throughput
+            name: Download Throughput
+          - entity: sensor.lil_nas_a_memory_available_real
+            name: Memory Available (Real)
+          - entity: sensor.lil_nas_a_memory_available_swap
+            name: Memory Available (Swap)
+          - entity: sensor.lil_nas_a_memory_total_real
+            name: Memory Total (Real)
+          - entity: sensor.lil_nas_a_memory_total_swap
+            name: Memory Total (Swap)
+          - entity: sensor.lil_nas_a_memory_usage_real
+            name: Memory Usage (Real)
+          - entity: binary_sensor.lil_nas_a_security_status
+            name: Security Status
+          - entity: sensor.lil_nas_a_upload_throughput
+            name: Upload Throughput
+        view_layout:
+          column: 1
+        title: Lil-NAS-A
+      - type: gauge
+        entity: sensor.lil_nas_a_volume_1_average_disk_temp
+        needle: false
+        severity:
+          green: 0
+          yellow: 95
+          red: 110
+        view_layout:
+          column: 2
+      - type: gauge
+        entity: sensor.lil_nas_b_volume_1_average_disk_temp
+        needle: false
+        severity:
+          green: 0
+          yellow: 95
+          red: 110
+        view_layout:
+          column: 2
+      - type: entities
+        entities:
+          - entity: sensor.lil_nas_b_cpu_load_average_15_min
+            name: CPU Load Average (15 min)
+          - entity: sensor.lil_nas_b_cpu_load_average_5_min
+            name: CPU Load Average (5 min)
+          - entity: sensor.lil_nas_b_cpu_utilization_total
+            name: CPU Utilization (Total)
+          - entity: sensor.lil_nas_b_cpu_utilization_user
+            name: CPU Utilization (User)
+          - entity: sensor.lil_nas_b_download_throughput
+            name: Download Throughput
+          - entity: sensor.lil_nas_b_memory_available_real
+            name: Memory Available (Real)
+          - entity: sensor.lil_nas_b_memory_available_swap
+            name: Memory Available (Swap)
+          - entity: sensor.lil_nas_b_memory_total_real
+            name: Memory Total (Real)
+          - entity: sensor.lil_nas_b_memory_total_swap
+            name: Memory Total (Swap)
+          - entity: sensor.lil_nas_b_memory_usage_real
+            name: Memory Usage (Real)
+          - entity: binary_sensor.lil_nas_b_security_status
+            name: Security Status
+          - entity: sensor.lil_nas_b_upload_throughput
+            name: Upload Throughput
+        view_layout:
+          column: 3
+        title: Lil-NAS-B
+      - type: entities
+        entities:
+          - entity: sensor.lil_nas_a_volume_1_status
+            name: Status
+          - entity: sensor.lil_nas_a_volume_1_used_space
+            name: Used Space
+          - entity: sensor.lil_nas_a_volume_1_volume_used
+            name: Volume Used
+        view_layout:
+          column: 2
+        title: Lil-NAS-A (Volume 1)
+      - type: entities
+        entities:
+          - entity: sensor.lil_nas_b_volume_1_status
+            name: Status
+          - entity: sensor.lil_nas_b_volume_1_used_space
+            name: Used Space
+          - entity: sensor.lil_nas_b_volume_1_volume_used
+            name: Volume Used
+        view_layout:
+          column: 2
+        title: Lil-NAS-B (Volume 1)
+      - type: entities
+        entities:
+          - entity: sensor.lil_nas_a_drive_1_status
+          - entity: sensor.lil_nas_a_drive_2_status
+          - entity: sensor.lil_nas_a_drive_3_status
+          - entity: sensor.lil_nas_a_drive_4_status
+          - entity: sensor.lil_nas_a_drive_5_status
+          - entity: sensor.lil_nas_a_drive_6_status
+        view_layout:
+          column: 1
+        state_color: false
+        title: Lil-NAS-A Drive Status
+      - type: entities
+        entities:
+          - entity: sensor.lil_nas_b_drive_1_status
+          - entity: sensor.lil_nas_b_drive_2_status
+          - entity: sensor.lil_nas_b_drive_3_status
+          - entity: sensor.lil_nas_b_drive_4_status
+          - entity: sensor.lil_nas_b_drive_5_status
+          - entity: sensor.lil_nas_b_drive_6_status
+        view_layout:
+          column: 3
+        state_color: false
+        title: Lil-NAS-B Drive Status
+      - type: entities
+        entities:
+          - entity: sensor.lil_nas_b_drive_1_temperature
+          - entity: sensor.lil_nas_b_drive_2_temperature
+          - entity: sensor.lil_nas_b_drive_3_temperature
+          - entity: sensor.lil_nas_b_drive_4_temperature
+          - entity: sensor.lil_nas_b_drive_5_temperature
+          - entity: sensor.lil_nas_b_drive_6_temperature
+        view_layout:
+          column: 3
+        state_color: false
+        title: Lil-NAS-B Drive Temperatures
+      - type: entities
+        entities:
+          - entity: sensor.lil_nas_a_drive_1_temperature
+          - entity: sensor.lil_nas_a_drive_2_temperature
+          - entity: sensor.lil_nas_a_drive_3_temperature
+          - entity: sensor.lil_nas_a_drive_4_temperature
+          - entity: sensor.lil_nas_a_drive_5_temperature
+          - entity: sensor.lil_nas_a_drive_6_temperature
+        view_layout:
+          column: 1
+        state_color: false
+        title: Lil-NAS-A Drive Temperatures
+title: Synology

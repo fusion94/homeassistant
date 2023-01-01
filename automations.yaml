@@ -1,0 +1,82 @@
+- id: '1671808165768'
+  alias: Driveway Lights - On
+  description: Automatically turn on driveway lights
+  trigger:
+  - platform: time
+    at: '17:00:00'
+  condition: []
+  action:
+  - type: turn_on
+    device_id: 3bd1bf39b186c46c511902b5ff534727
+    entity_id: light.driveway
+    domain: light
+    brightness_pct: 50
+  mode: single
+- id: '1671808547111'
+  alias: Driveway Lights - Off
+  description: Automatically turn off driveway lights
+  trigger:
+  - platform: time
+    at: '23:00:00'
+  condition: []
+  action:
+  - type: turn_off
+    device_id: 3bd1bf39b186c46c511902b5ff534727
+    entity_id: light.driveway
+    domain: light
+  mode: single
+- id: '1672357935347'
+  alias: Driveway Lights - Dim
+  description: Automatically dim driveway lights
+  trigger:
+  - platform: time
+    at: '21:00:00'
+  condition: []
+  action:
+  - device_id: 3bd1bf39b186c46c511902b5ff534727
+    domain: light
+    entity_id: light.driveway
+    type: brightness_decrease
+    brightness_pct: 25
+  mode: single
+- id: '1672358800485'
+  alias: Front Porch - On
+  description: Automatically turn on Porch Lights
+  trigger:
+  - platform: time
+    at: '17:00:00'
+  condition: []
+  action:
+  - type: turn_on
+    device_id: 38b71bcb43d97ccb4eac69790f7d1a2d
+    entity_id: light.front_porch
+    domain: light
+    brightness_pct: 50
+  mode: single
+- id: '1672358834292'
+  alias: Front Porch - Off
+  description: Automatically turn off Porch Lights
+  trigger:
+  - platform: time
+    at: '23:00:00'
+  condition: []
+  action:
+  - type: turn_off
+    device_id: 38b71bcb43d97ccb4eac69790f7d1a2d
+    entity_id: light.front_porch
+    domain: light
+  mode: single
+- id: '1672358896924'
+  alias: Front Porch - Dim
+  description: Dim Porch Lights
+  trigger:
+  - platform: time
+    at: '21:00:00'
+  condition: []
+  action:
+  - device_id: 38b71bcb43d97ccb4eac69790f7d1a2d
+    domain: light
+    entity_id: light.front_porch
+    type: brightness_decrease
+    brightness_pct: '25'
+  mode: single

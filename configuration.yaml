@@ -1,0 +1,107 @@
+
+# Loads default set of integrations. Do not remove.
+default_config:
+
+# Load frontend themes from the themes folder
+frontend:
+  themes: !include_dir_merge_named themes
+
+logger:
+  logs:
+    custom_components.govee_ble: debug
+    custom_components.ble_monitor: info
+
+# Text to speech
+tts:
+  - platform: google_translate
+
+automation: !include automations.yaml
+script: !include scripts.yaml
+scene: !include scenes.yaml
+
+weather:
+  - platform: pirateweather
+    api_key: !secret pirate_api
+    # Additional optional values:
+    latitude: '37'
+    longitude: '-122'
+    mode: "hourly"
+    name: Pirate Weather
+
+fastdotcom:
+  scan_interval:
+      minutes: 30
+
+sensor:
+  - platform: average
+    name: 'Average Current Consumption'
+    entities:
+      - sensor.tp_link_smart_plug_1_current_consumption
+      - sensor.tp_link_smart_plug_2_current_consumption
+  - platform: average
+    name: 'Average Todays Consumption'
+    entities:
+      - sensor.tp_link_smart_plug_1_today_s_consumption
+      - sensor.tp_link_smart_plug_2_today_s_consumption
+  - platform: template
+    sensors:
+      nextsunrise:
+        entity_id: sun.sun
+        friendly_name: 'Next Sunrise'
+        value_template: >
+          {{ as_timestamp(states.sun.sun.attributes.next_rising) | timestamp_custom(' %I:%M %p') | replace(" 0", "") }}
+        icon_template: mdi:weather-sunset-up
+      nextsunset:
+        entity_id: sun.sun
+        friendly_name: 'Next Sunset'
+        value_template: >
+          {{ as_timestamp(states.sun.sun.attributes.next_setting) | timestamp_custom(' %I:%M %p') | replace(" 0", "") }}
+        icon_template: mdi:weather-sunset-down
+  - platform: openhardwaremonitor
+    host: 192.168.1.181     
+  - platform: worldclock
+    name: London Time
+    time_zone: Europe/London
+    time_format: "%A %b %d %X"
+  - platform: worldclock
+    name: Cupertino Time
+    time_zone: US/Pacific
+    time_format: "%A %b %d %X"
+  - platform: worldclock
+    name: Chicago Time
+    time_zone: US/Central
+    time_format: "%A %b %d %X"
+  - platform: worldclock
+    name: UTC
+    time_zone: Etc/UTC
+    time_format: "%A %b %d %X"
+  - platform: worldclock
+    name: India
+    time_zone: Asia/Calcutta
+    time_format: "%A %b %d %X"
+  - platform: worldclock
+    name: China
+    time_zone: Asia/Shanghai
+    time_format: "%A %b %d %X"
+  - platform: my_unifi
+    name: unifi
+    region: default
+    username: hass
+    password: EclkPnyy$$1
+    url: https://192.168.1.120
+sensor sunevent:
+  - platform: template
+    sensors:
+      sunrise:
+        friendly_name: "Next Sunrise"
+        #unit_of_measurement: "AM"
+        value_template: >
+          {{ as_timestamp(state_attr("sun.sun", "next_rising"))
+             |timestamp_custom("%I:%M:%S %p") }}
+      sunset:
+        friendly_name: "Next Sunset"
+        #unit_of_measurement: "PM"
+        value_template: >
+          {{ as_timestamp(state_attr("sun.sun", "next_setting"))
+             |timestamp_custom("%I:%M:%S %p") }}
+

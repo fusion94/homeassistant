@@ -1,0 +1,184 @@
+- id: '1672161988278'
+  name: New Scene
+  entities:
+    light.h6159_unit_1:
+      min_color_temp_kelvin: 2000
+      max_color_temp_kelvin: 9009
+      min_mireds: 111
+      max_mireds: 500
+      supported_color_modes:
+      - color_temp
+      - hs
+      color_mode: hs
+      brightness: 130
+      hs_color:
+      - 240
+      - 100
+      rgb_color:
+      - 0
+      - 0
+      - 255
+      xy_color:
+      - 0.136
+      - 0.04
+      rate_limit_total: 100
+      rate_limit_remaining: -225
+      rate_limit_reset_seconds: -1672161979.67
+      rate_limit_reset: '1970-01-01T00:00:00'
+      rate_limit_on: 5
+      manufacturer: Govee
+      model: H6159
+      friendly_name: H6159_unit-1
+      supported_features: 19
+      state: 'on'
+  metadata: {}
+- id: '1672162222141'
+  name: 1 - Workshop (Blue)
+  entities:
+    light.workshop:
+      min_color_temp_kelvin: 2000
+      max_color_temp_kelvin: 6535
+      min_mireds: 153
+      max_mireds: 500
+      supported_color_modes:
+      - color_temp
+      - xy
+      color_mode: xy
+      brightness: 255
+      hs_color:
+      - 240.337
+      - 69.804
+      rgb_color:
+      - 78
+      - 77
+      - 255
+      xy_color:
+      - 0.164
+      - 0.083
+      is_hue_group: true
+      hue_scenes:
+      - Dimmed
+      - Energize
+      - lego
+      - Nightlight
+      - Savanna sunset
+      - Night
+      - Tropical twilight
+      - Spring blossom
+      - Relax
+      - Read
+      - Bright
+      - Arctic aurora
+      - Concentrate
+      hue_type: room
+      lights:
+      - Row1Light2
+      - Row3Light2
+      - Row3Light3
+      - Row1Light1
+      - Row1Light3
+      - Row2Light1
+      - Row2Light2
+      - Row2Light4
+      - Row3Light1
+      - Row1Light4
+      - Row2Light3
+      - Row3Light4
+      dynamics: false
+      icon: mdi:lightbulb-group
+      friendly_name: Workshop
+      supported_features: 40
+      state: 'on'
+  metadata: {}
+- id: '1672162270702'
+  name: 1 - Workshop (Red)
+  entities:
+    light.workshop:
+      min_color_temp_kelvin: 2000
+      max_color_temp_kelvin: 6535
+      min_mireds: 153
+      max_mireds: 500
+      supported_color_modes:
+      - color_temp
+      - xy
+      color_mode: xy
+      brightness: 255
+      hs_color:
+      - 344.409
+      - 99.608
+      rgb_color:
+      - 255
+      - 1
+      - 67
+      xy_color:
+      - 0.667
+      - 0.284
+      is_hue_group: true
+      hue_scenes:
+      - Dimmed
+      - Energize
+      - lego
+      - Nightlight
+      - Savanna sunset
+      - Night
+      - Tropical twilight
+      - Spring blossom
+      - Relax
+      - Read
+      - Bright
+      - Arctic aurora
+      - Concentrate
+      hue_type: room
+      lights:
+      - Row1Light2
+      - Row3Light2
+      - Row3Light3
+      - Row1Light1
+      - Row1Light3
+      - Row2Light1
+      - Row2Light2
+      - Row2Light4
+      - Row3Light1
+      - Row1Light4
+      - Row2Light3
+      - Row3Light4
+      dynamics: false
+      icon: mdi:lightbulb-group
+      friendly_name: Workshop
+      supported_features: 40
+      state: 'on'
+  metadata: {}
+- id: '1672162495627'
+  name: Govee Blue
+  entities:
+    light.h6159_unit_1:
+      min_color_temp_kelvin: 2000
+      max_color_temp_kelvin: 9009
+      min_mireds: 111
+      max_mireds: 500
+      supported_color_modes:
+      - color_temp
+      - hs
+      friendly_name: H6159_unit-1
+      supported_features: 19
+      color_mode: hs
+      brightness: 255
+      hs_color:
+      - 240
+      - 100
+      rgb_color:
+      - 0
+      - 0
+      - 255
+      xy_color:
+      - 0.136
+      - 0.04
+      rate_limit_total: 100
+      rate_limit_remaining: -406
+      rate_limit_reset_seconds: -1672162529.67
+      rate_limit_reset: '1970-01-01T00:00:00'
+      rate_limit_on: 5
+      manufacturer: Govee
+      model: H6159
+      state: 'on'
+  metadata: {}

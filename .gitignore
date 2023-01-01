@@ -1,0 +1,6 @@
+.DS_Store
+secrets.yaml
+.cloud
+.storage
+home-assistant.log*
+home-assistant_v2.db*
