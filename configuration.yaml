@@ -14,6 +14,12 @@ logger:
     custom_components.govee_ble: debug
     custom_components.ble_monitor: info
 
+recorder:
+  exclude: #Exclude entities
+    entities:
+      - sensor.golden_state_warriors
+      - sensor.dallas_cowboys
+
 # Text to speech
 tts:
   - platform: google_translate
