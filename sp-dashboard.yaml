@@ -1,0 +1,170 @@
+views:
+  - theme: Backend-selected
+    title: Home
+    type: custom:horizontal-layout
+    layout:
+      width: 350
+      max_cols: 3
+    subview: false
+    badges: []
+    cards:
+      - type: entities
+        entities:
+          - entity: switch.tp_link_sp_1
+          - entity: switch.tp_link_sp_1_led
+          - entity: sensor.tp_link_sp_1_current
+          - entity: sensor.tp_link_sp_1_current_consumption
+          - entity: sensor.tp_link_sp_1_today_s_consumption
+          - entity: sensor.tp_link_sp_1_total_consumption
+          - entity: sensor.tp_link_sp_1_voltage
+        title: TP-Link SP-1
+        view_layout:
+          column: 1
+      - type: entities
+        entities:
+          - entity: switch.tp_link_sp_3
+          - entity: switch.tp_link_sp_3_led
+          - entity: sensor.tp_link_sp_3_current
+          - entity: sensor.tp_link_sp_3_current_consumption
+          - entity: sensor.tp_link_sp_3_today_s_consumption
+          - entity: sensor.tp_link_sp_3_total_consumption
+          - entity: sensor.tp_link_sp_3_voltage
+        title: TP-Link SP-3
+        view_layout:
+          column: 1
+      - type: entities
+        entities:
+          - entity: switch.tp_link_sp_5
+          - entity: switch.tp_link_sp_5_led
+          - entity: sensor.tp_link_sp_5_current
+          - entity: sensor.tp_link_sp_5_current_consumption
+          - entity: sensor.tp_link_sp_5_today_s_consumption
+          - entity: sensor.tp_link_sp_5_total_consumption
+          - entity: sensor.tp_link_sp_5_voltage
+        title: TP-LINK SP-5
+        view_layout:
+          column: 1
+      - type: entities
+        entities:
+          - entity: switch.tp_link_sp_7
+          - entity: switch.tp_link_sp_7_led
+          - entity: sensor.tp_link_sp_7_current
+          - entity: sensor.tp_link_sp_7_current_consumption
+          - entity: sensor.tp_link_sp_7_today_s_consumption
+          - entity: sensor.tp_link_sp_7_total_consumption
+          - entity: sensor.tp_link_sp_7_voltage
+        title: TP-LINK SP-7
+        view_layout:
+          column: 1
+      - type: entities
+        entities:
+          - entity: switch.tp_link_sp_2
+          - entity: switch.tp_link_sp_2_led
+          - entity: sensor.tp_link_sp_2_current
+          - entity: sensor.tp_link_sp_2_current_consumption
+          - entity: sensor.tp_link_sp_2_today_s_consumption
+          - entity: sensor.tp_link_sp_2_total_consumption
+          - entity: sensor.tp_link_sp_2_voltage
+        title: TP-Link SP-2
+        view_layout:
+          column: 3
+      - type: entities
+        entities:
+          - entity: switch.tp_link_sp_4
+          - entity: switch.tp_link_sp_4_led
+          - entity: sensor.tp_link_sp_4_current
+          - entity: sensor.tp_link_sp_4_current_consumption
+          - entity: sensor.tp_link_sp_4_today_s_consumption
+          - entity: sensor.tp_link_sp_4_total_consumption
+          - entity: sensor.tp_link_sp_4_voltage
+        title: TP-LINK SP-4
+        view_layout:
+          column: 3
+      - type: entities
+        entities:
+          - entity: switch.tp_link_sp_6
+          - entity: switch.tp_link_sp_6_led
+          - entity: sensor.tp_link_sp_6_current
+          - entity: sensor.tp_link_sp_6_current_consumption
+          - entity: sensor.tp_link_sp_6_today_s_consumption
+          - entity: sensor.tp_link_sp_6_total_consumption
+          - entity: sensor.tp_link_sp_6_voltage
+        title: TP-LINK SP-6
+        view_layout:
+          column: 3
+      - type: entities
+        entities:
+          - entity: switch.tp_link_sp_8
+          - entity: switch.tp_link_sp_8_led
+          - entity: sensor.tp_link_sp_8_current
+          - entity: sensor.tp_link_sp_8_current_consumption
+          - entity: sensor.tp_link_sp_8_today_s_consumption
+          - entity: sensor.tp_link_sp_8_total_consumption
+          - entity: sensor.tp_link_sp_8_voltage
+        title: TP-LINK SP-8
+        view_layout:
+          column: 3
+      - hours_to_show: 720
+        graph: none
+        type: sensor
+        entity: sensor.tp_link_smart_plugs_total_consumption
+        detail: 1
+        view_layout:
+          column: 2
+      - hours_to_show: 24
+        graph: line
+        type: sensor
+        detail: 2
+        entity: sensor.tp_link_sp_1_total_consumption
+        name: Washer Power Consumption - Total
+        view_layout:
+          column: 2
+      - hours_to_show: 24
+        graph: line
+        type: sensor
+        detail: 2
+        entity: sensor.tp_link_sp_2_total_consumption
+        name: Dryer Power Consumption - Total
+        view_layout:
+          column: 2
+      - hours_to_show: 24
+        graph: line
+        type: sensor
+        detail: 2
+        entity: sensor.tp_link_sp_3_total_consumption
+        name: Freezer Power Consumption - Total
+        view_layout:
+          column: 2
+      - hours_to_show: 24
+        graph: line
+        type: sensor
+        detail: 2
+        entity: sensor.tp_link_sp_4_total_consumption
+        name: TP-LINK SP-4 Total Consumption
+        view_layout:
+          column: 2
+      - hours_to_show: 24
+        graph: line
+        type: sensor
+        detail: 2
+        entity: sensor.tp_link_sp_5_total_consumption
+        name: TP-LINK SP-5 Total Consumption
+        view_layout:
+          column: 2
+      - hours_to_show: 24
+        graph: line
+        type: sensor
+        detail: 2
+        entity: sensor.tp_link_sp_6_total_consumption
+        name: TP-LINK SP-6 Total Consumption
+        view_layout:
+          column: 2
+      - hours_to_show: 24
+        graph: line
+        type: sensor
+        detail: 2
+        entity: sensor.tp_link_sp_8_total_consumption
+        name: TP-LINK SP-8 Total Consumption
+        view_layout:
+          column: 2
+title: Smart Plugs - Power Consumption

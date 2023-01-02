@@ -72,6 +72,10 @@ This list of gear/equipment is not complete.
 - [Synology NAS DiskStation DS1621+](https://www.synology.com/en-us/products/DS1621+) x2
   - [Synology 10Gb Ethernet Adapter 2 SFP+ Ports (E10G21-F2)](https://www.synology.com/en-us/products/E10G21-F2)
 
+### Smart Plugs
+
+- [Kasa Smart WiFi Plug Slim with Energy Monitoring](https://www.kasasmart.com/us/products/smart-plugs/kasa-smart-plug-slim-energy-monitoring-ep25?option=1) x8
+
 ## Screenshots
 
 ![HA Dashboard Overview](overview.png)
@@ -79,6 +83,9 @@ _Entry Point into the Dashboards_
 
 ![HA Dashboard - Synology](synology.png)
 _Synology Dashboards_
+
+![HA Dashboard - Smart Plugs](smart-plugs.png)
+_Smart Plugs Dashboards_
 
 ## Features
 
