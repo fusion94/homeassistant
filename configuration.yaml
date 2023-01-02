@@ -36,16 +36,6 @@ fastdotcom:
       minutes: 30
 
 sensor:
-  - platform: average
-    name: 'Average Current Consumption'
-    entities:
-      - sensor.tp_link_smart_plug_1_current_consumption
-      - sensor.tp_link_smart_plug_2_current_consumption
-  - platform: average
-    name: 'Average Todays Consumption'
-    entities:
-      - sensor.tp_link_smart_plug_1_today_s_consumption
-      - sensor.tp_link_smart_plug_2_today_s_consumption
   - platform: template
     sensors:
       nextsunrise:
@@ -86,12 +76,14 @@ sensor:
     name: China
     time_zone: Asia/Shanghai
     time_format: "%A %b %d %X"
+
   - platform: my_unifi
     name: unifi
     region: default
-    username: hass
-    password: EclkPnyy$$1
-    url: https://192.168.1.120
+    username: !secret unifi_username
+    password: !secret unifi_password
+    url: !secret unifi_url
+     
 sensor sunevent:
   - platform: template
     sensors:
