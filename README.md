@@ -31,15 +31,17 @@ USG-Pro-4 to utilize WAN Failover.
 ![USG-PRO-4](usg-pro-wan-full.png)
 _USG-Pro-4 WAN Failover_
 
-**What is WAN Failover?**
-Failover enables you to connect a second Internet connection to your UniFi
-Gateway which will serve as a “backup”. If your primary Internet service goes
-down, you will begin utilizing your secondary Internet connection.
+> **What is WAN Failover?**
+>
+> Failover enables you to connect a second Internet connection to your UniFi
+> Gateway which will serve as a “backup”. If your primary Internet service goes
+> down, you will begin utilizing your secondary Internet connection.
 
-**How does UniFi determine if my Internet goes down?**
-The UniFi Network Application checks for connectivity and latency to an “echo
-server”. By default, this is set to ping.ui.com which leverages responses from
-various locations to ensure maximum accuracy.
+> **How does UniFi determine if my Internet goes down?**
+>
+> The UniFi Network Application checks for connectivity and latency to an “echo
+> server”. By default, this is set to ping.ui.com which leverages responses from
+> various locations to ensure maximum accuracy.
 
 In addition to the two WAN connections, UniFi Gateways also support the use of
 our UniFi LTE Backup which is connected to a LAN port. This is only capable of
@@ -66,6 +68,9 @@ This list of gear/equipment is not complete.
 - [Access Point FlexHD](https://store.ui.com/collections/wireless/products/unifi-flexhd) x5
 
 ### NAS
+
+- [Synology NAS DiskStation DS1621+](https://www.synology.com/en-us/products/DS1621+) x2
+  - [Synology 10Gb Ethernet Adapter 2 SFP+ Ports (E10G21-F2)](https://www.synology.com/en-us/products/E10G21-F2)
 
 ## Screenshots
 
