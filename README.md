@@ -81,7 +81,7 @@ This list of gear/equipment is not complete.
 ![HA Dashboard Overview](overview.png)
 _Entry Point into the Dashboards_
 
-![HA Dashboard - Synology](synology.png)
+![HA Dashboard - Synology](synology-new.png)
 _Synology Dashboards_
 
 ![HA Dashboard - Smart Plugs](smart-plugs.png)
