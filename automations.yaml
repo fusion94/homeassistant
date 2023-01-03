@@ -80,3 +80,15 @@
     type: brightness_decrease
     brightness_pct: '25'
   mode: single
+- id: '1672704730883'
+  alias: Workshop Movie/TV
+  description: ''
+  trigger:
+  - platform: state
+    entity_id:
+    - media_player.apple_tv_4k_garage
+    from: playing
+  condition:
+  action:
+  - scene: scene.workshop_black_alert
+  mode: single

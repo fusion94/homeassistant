@@ -38,6 +38,42 @@ views:
             entity: sensor.lil_nas_a_upload_throughput
         view_layout:
           column: 1
+      - type: vertical-stack
+        cards:
+          - type: custom:mushroom-title-card
+            title: Lil-NAS-A Drive Status
+          - type: custom:mushroom-entity-card
+            entity: sensor.lil_nas_a_drive_1_status
+          - type: custom:mushroom-entity-card
+            entity: sensor.lil_nas_a_drive_2_status
+          - type: custom:mushroom-entity-card
+            entity: sensor.lil_nas_a_drive_3_status
+          - type: custom:mushroom-entity-card
+            entity: sensor.lil_nas_a_drive_4_status
+          - type: custom:mushroom-entity-card
+            entity: sensor.lil_nas_a_drive_5_status
+          - type: custom:mushroom-entity-card
+            entity: sensor.lil_nas_a_drive_6_status
+        view_layout:
+          column: 1
+      - type: vertical-stack
+        cards:
+          - type: custom:mushroom-title-card
+            title: LIL-NAS-A Drive Temperatures
+          - type: custom:mushroom-entity-card
+            entity: sensor.lil_nas_a_drive_1_temperature
+          - type: custom:mushroom-entity-card
+            entity: sensor.lil_nas_a_drive_2_temperature
+          - type: custom:mushroom-entity-card
+            entity: sensor.lil_nas_a_drive_3_temperature
+          - type: custom:mushroom-entity-card
+            entity: sensor.lil_nas_a_drive_4_temperature
+          - type: custom:mushroom-entity-card
+            entity: sensor.lil_nas_a_drive_5_temperature
+          - type: custom:mushroom-entity-card
+            entity: sensor.lil_nas_a_drive_6_temperature
+        view_layout:
+          column: 1
       - type: custom:mini-graph-card
         entities:
           - sensor.lil_nas_a_volume_1_average_disk_temp
@@ -76,36 +112,6 @@ views:
             color: '#BF360C'
         view_layout:
           column: 2
-      - type: vertical-stack
-        cards:
-          - type: custom:mushroom-title-card
-            title: Lil-NAS-B Status
-          - type: custom:mushroom-entity-card
-            entity: sensor.lil_nas_b_cpu_load_average_15_min
-          - type: custom:mushroom-entity-card
-            entity: sensor.lil_nas_b_cpu_load_average_5_min
-          - type: custom:mushroom-entity-card
-            entity: sensor.lil_nas_b_cpu_utilization_total
-          - type: custom:mushroom-entity-card
-            entity: sensor.lil_nas_b_cpu_utilization_user
-          - type: custom:mushroom-entity-card
-            entity: sensor.lil_nas_b_download_throughput
-          - type: custom:mushroom-entity-card
-            entity: sensor.lil_nas_b_memory_available_real
-          - type: custom:mushroom-entity-card
-            entity: sensor.lil_nas_b_memory_available_swap
-          - type: custom:mushroom-entity-card
-            entity: sensor.lil_nas_b_memory_total_real
-          - type: custom:mushroom-entity-card
-            entity: sensor.lil_nas_b_memory_total_swap
-          - type: custom:mushroom-entity-card
-            entity: sensor.lil_nas_b_memory_usage_real
-          - type: custom:mushroom-entity-card
-            entity: binary_sensor.lil_nas_b_security_status
-          - type: custom:mushroom-entity-card
-            entity: sensor.lil_nas_b_upload_throughput
-        view_layout:
-          column: 3
       - type: vertical-stack
         cards:
           - type: custom:mushroom-title-card
@@ -156,39 +162,33 @@ views:
       - type: vertical-stack
         cards:
           - type: custom:mushroom-title-card
-            title: Lil-NAS-A Drive Status
+            title: Lil-NAS-B Status
           - type: custom:mushroom-entity-card
-            entity: sensor.lil_nas_a_drive_1_status
+            entity: sensor.lil_nas_b_cpu_load_average_15_min
           - type: custom:mushroom-entity-card
-            entity: sensor.lil_nas_a_drive_2_status
+            entity: sensor.lil_nas_b_cpu_load_average_5_min
           - type: custom:mushroom-entity-card
-            entity: sensor.lil_nas_a_drive_3_status
+            entity: sensor.lil_nas_b_cpu_utilization_total
           - type: custom:mushroom-entity-card
-            entity: sensor.lil_nas_a_drive_4_status
+            entity: sensor.lil_nas_b_cpu_utilization_user
           - type: custom:mushroom-entity-card
-            entity: sensor.lil_nas_a_drive_5_status
+            entity: sensor.lil_nas_b_download_throughput
           - type: custom:mushroom-entity-card
-            entity: sensor.lil_nas_a_drive_6_status
+            entity: sensor.lil_nas_b_memory_available_real
+          - type: custom:mushroom-entity-card
+            entity: sensor.lil_nas_b_memory_available_swap
+          - type: custom:mushroom-entity-card
+            entity: sensor.lil_nas_b_memory_total_real
+          - type: custom:mushroom-entity-card
+            entity: sensor.lil_nas_b_memory_total_swap
+          - type: custom:mushroom-entity-card
+            entity: sensor.lil_nas_b_memory_usage_real
+          - type: custom:mushroom-entity-card
+            entity: binary_sensor.lil_nas_b_security_status
+          - type: custom:mushroom-entity-card
+            entity: sensor.lil_nas_b_upload_throughput
         view_layout:
-          column: 1
-      - type: vertical-stack
-        cards:
-          - type: custom:mushroom-title-card
-            title: LIL-NAS-A Drive Temperatures
-          - type: custom:mushroom-entity-card
-            entity: sensor.lil_nas_a_drive_1_temperature
-          - type: custom:mushroom-entity-card
-            entity: sensor.lil_nas_a_drive_2_temperature
-          - type: custom:mushroom-entity-card
-            entity: sensor.lil_nas_a_drive_3_temperature
-          - type: custom:mushroom-entity-card
-            entity: sensor.lil_nas_a_drive_4_temperature
-          - type: custom:mushroom-entity-card
-            entity: sensor.lil_nas_a_drive_5_temperature
-          - type: custom:mushroom-entity-card
-            entity: sensor.lil_nas_a_drive_6_temperature
-        view_layout:
-          column: 1
+          column: 3
       - type: vertical-stack
         cards:
           - type: custom:mushroom-title-card

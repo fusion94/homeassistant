@@ -1,7 +1,26 @@
-.DS_Store
-secrets.yaml
+# Directory (contents) ignores
 .cloud
 .storage
-home-assistant.log*
-home-assistant_v2.db*
+deps
+
+# Generic ignores
+*.log*
+*.db
+*.db-shm
+*.db-wal
+*.pyc
+*.pickle
+._*
+__pycache__
+
+# Specific file ignores
+.DS_Store
+secrets.yaml
 nest/event_media/
+
+# Ignore files created by IDE's
+.vscode
+
+# Specific keeps
+!.gitkeep
+!.gitignore

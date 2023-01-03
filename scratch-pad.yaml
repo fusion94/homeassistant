@@ -1,0 +1,38 @@
+type: custom:mini-graph-card
+name: Total Power Consumption - 24h
+entities:
+  - sensor.tp_link_smart_plugs_total_consumption
+line_color: '#4CAF50'
+line_width: 2
+font_size: 150
+font_size_header: 18
+align_state: right
+icon: mdi:lightning-bolt
+hours_to_show: 24
+hour24: true
+decimals: 3
+show:
+  labels: true
+  fill: fade
+  name_adaptive_color: true
+  icon_adaptive_color: true
+view_layout:
+  column: 2
+
+
+media_player.apple_tv_4k_garage
+
+
+  alias: Trigger Movie Scene
+
+  trigger:
+  - platform: state
+    entity_id: media_player.apple_tv_4k_garage
+    to: 'on'
+  condition:
+  - condition: sun
+    after: sunset
+    before: sunrise
+  action:
+  - scene: scene.workshop_black_alert
+  mode: single
