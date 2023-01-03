@@ -17,6 +17,7 @@ __pycache__
 .DS_Store
 secrets.yaml
 nest/event_media/
+image/*
 
 # Ignore files created by IDE's
 .vscode
